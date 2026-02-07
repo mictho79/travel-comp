@@ -8,6 +8,7 @@ const stylesFile = "styles.css";
 const jsDir = "js";
 const dataDir = "data";
 
+const SITE_URL = "https://travel-comp.pages.dev"; // ✅ used in robots + sitemap
 const outDir = "dist";
 
 const countries = JSON.parse(fs.readFileSync(countriesPath, "utf8"));
@@ -54,7 +55,7 @@ function layout({ title, description, content }) {
 </html>`;
 }
 
-// Track urls for sitemap (relative locs for now)
+// Track urls for sitemap (relative paths, we'll prefix with SITE_URL)
 const generatedUrls = [];
 
 // --------------------
@@ -138,22 +139,24 @@ fs.copyFileSync(mainIndexPath, path.join(outDir, "index.html"));
 generatedUrls.unshift("/");
 
 // --------------------
-// 4) robots.txt
+// 4) robots.txt (ABSOLUTE SITEMAP URL)
 // --------------------
 const robotsTxt = `User-agent: *
 Allow: /
 
-Sitemap: /sitemap.xml
+Sitemap: ${SITE_URL}/sitemap.xml
 `;
 fs.writeFileSync(path.join(outDir, "robots.txt"), robotsTxt);
 
 // --------------------
-// 5) sitemap.xml (relative URLs for now)
+// 5) sitemap.xml (ABSOLUTE URLs)
 // --------------------
 const sitemapXml =
   `<?xml version="1.0" encoding="UTF-8"?>\n` +
   `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
-  generatedUrls.map((u) => `  <url><loc>${escapeHtml(u)}</loc></url>`).join("\n") +
+  generatedUrls
+    .map((u) => `  <url><loc>${escapeHtml(SITE_URL + u)}</loc></url>`)
+    .join("\n") +
   `\n</urlset>\n`;
 
 fs.writeFileSync(path.join(outDir, "sitemap.xml"), sitemapXml);
