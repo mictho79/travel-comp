@@ -7,17 +7,16 @@ const assetsDir = "assets";
 const stylesFile = "styles.css";
 const jsDir = "js";
 const dataDir = "data";
+const i18nDir = "i18n";
 
-const SITE_URL = "https://travel-comp.pages.dev"; // ✅ used in robots + sitemap
+const SITE_URL = "https://travel-comp.pages.dev";
 const outDir = "dist";
 
 const countries = JSON.parse(fs.readFileSync(countriesPath, "utf8"));
 
-// Clean dist
 fs.rmSync(outDir, { recursive: true, force: true });
 fs.mkdirSync(outDir, { recursive: true });
 
-// Helpers
 const escapeHtml = (s) =>
   String(s)
     .replaceAll("&", "&amp;")
@@ -28,8 +27,8 @@ const escapeHtml = (s) =>
 
 const toAbsoluteAssetPath = (img) => {
   if (!img) return "/assets/pixel/placeholder.png";
-  if (img.startsWith("./")) return img.slice(1); // "./assets/..." -> "/assets/..."
-  if (!img.startsWith("/")) return "/" + img; // "assets/..." -> "/assets/..."
+  if (img.startsWith("./")) return img.slice(1);
+  if (!img.startsWith("/")) return "/" + img;
   return img;
 };
 
@@ -55,12 +54,9 @@ function layout({ title, description, content }) {
 </html>`;
 }
 
-// Track urls for sitemap (relative paths, we'll prefix with SITE_URL)
 const generatedUrls = [];
 
-// --------------------
-// 1) /countries/
-// --------------------
+// /countries/
 const listItems = Object.entries(countries)
   .map(([slug, c]) => {
     const name = escapeHtml(c.name);
@@ -81,12 +77,9 @@ const countriesHtml = layout({
 
 fs.mkdirSync(path.join(outDir, "countries"), { recursive: true });
 fs.writeFileSync(path.join(outDir, "countries", "index.html"), countriesHtml);
-
 generatedUrls.push("/countries/");
 
-// --------------------
-// 2) /country/:slug/
-// --------------------
+// /country/:slug/
 for (const [slug, c] of Object.entries(countries)) {
   const imgPath = toAbsoluteAssetPath(c.image);
   const notes = (c.notes || []).map((n) => `<li>${escapeHtml(n)}</li>`).join("");
@@ -123,61 +116,37 @@ for (const [slug, c] of Object.entries(countries)) {
   const dir = path.join(outDir, "country", slug);
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, "index.html"), page);
-
   generatedUrls.push(`/country/${slug}/`);
 }
 
-// --------------------
-// 3) Home page = COPY your real comparator (root index.html)
-// --------------------
-const mainIndexPath = "index.html";
-if (!fs.existsSync(mainIndexPath)) {
-  throw new Error("Missing root index.html (your comparator homepage).");
-}
-
-fs.copyFileSync(mainIndexPath, path.join(outDir, "index.html"));
+// Home
+if (!fs.existsSync("index.html")) throw new Error("Missing root index.html");
+fs.copyFileSync("index.html", path.join(outDir, "index.html"));
 generatedUrls.unshift("/");
 
-// --------------------
-// 4) robots.txt (ABSOLUTE SITEMAP URL)
-// --------------------
-const robotsTxt = `User-agent: *
+// robots + sitemap
+fs.writeFileSync(
+  path.join(outDir, "robots.txt"),
+  `User-agent: *
 Allow: /
 
 Sitemap: ${SITE_URL}/sitemap.xml
-`;
-fs.writeFileSync(path.join(outDir, "robots.txt"), robotsTxt);
+`
+);
 
-// --------------------
-// 5) sitemap.xml (ABSOLUTE URLs)
-// --------------------
 const sitemapXml =
   `<?xml version="1.0" encoding="UTF-8"?>\n` +
   `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
-  generatedUrls
-    .map((u) => `  <url><loc>${escapeHtml(SITE_URL + u)}</loc></url>`)
-    .join("\n") +
+  generatedUrls.map((u) => `  <url><loc>${escapeHtml(SITE_URL + u)}</loc></url>`).join("\n") +
   `\n</urlset>\n`;
 
 fs.writeFileSync(path.join(outDir, "sitemap.xml"), sitemapXml);
 
-// --------------------
-// 6) Copy static files: assets, styles, js, data
-// --------------------
-if (fs.existsSync(assetsDir)) {
-  fs.cpSync(assetsDir, path.join(outDir, assetsDir), { recursive: true });
-}
+// Copy static
+if (fs.existsSync(assetsDir)) fs.cpSync(assetsDir, path.join(outDir, assetsDir), { recursive: true });
+if (fs.existsSync(stylesFile)) fs.copyFileSync(stylesFile, path.join(outDir, "styles.css"));
+if (fs.existsSync(jsDir)) fs.cpSync(jsDir, path.join(outDir, jsDir), { recursive: true });
+if (fs.existsSync(dataDir)) fs.cpSync(dataDir, path.join(outDir, dataDir), { recursive: true });
+if (fs.existsSync(i18nDir)) fs.cpSync(i18nDir, path.join(outDir, i18nDir), { recursive: true });
 
-if (fs.existsSync(stylesFile)) {
-  fs.copyFileSync(stylesFile, path.join(outDir, "styles.css"));
-}
-
-if (fs.existsSync(jsDir)) {
-  fs.cpSync(jsDir, path.join(outDir, jsDir), { recursive: true });
-}
-
-if (fs.existsSync(dataDir)) {
-  fs.cpSync(dataDir, path.join(outDir, dataDir), { recursive: true });
-}
-
-console.log("✅ Built dist/: comparator homepage + countries pages + country pages + robots + sitemap");
+console.log("✅ Built dist/: comparator + pages + robots + sitemap + i18n");

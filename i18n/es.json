@@ -1,0 +1,22 @@
+{
+  "title": "Comparador de presupuesto de viaje",
+  "subtitle": "Estimaciones rápidas basadas en promedios nacionales (en EUR).",
+  "browseAll": "Ver todos los países →",
+
+  "countryA": "País A",
+  "countryB": "País B",
+  "tripLength": "Duración del viaje (días)",
+  "days": "días",
+  "travelStyle": "Estilo de viaje",
+  "backpacker": "Mochilero",
+  "comfort": "Confort",
+  "luxury": "Lujo",
+  "includeFlight": "Incluir vuelo ida y vuelta (desde Europa)",
+
+  "results": "Resultados",
+  "perDay": "/ día",
+  "flightLabel": "Vuelo",
+  "compareText": "{cheaper} es más barato. {expensive} cuesta +{diff} (~{pct}) en {days} días.",
+  "importantNotes": "Notas importantes",
+  "disclaimer": "Las estimaciones son promedios nacionales. Los costos varían mucho según la ciudad, la temporada y tus hábitos."
+}

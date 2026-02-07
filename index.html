@@ -1,3 +1,4 @@
+<!-- File: index.html -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,49 +16,61 @@
 <body>
   <main class="container">
     <header class="header">
-      <h1>Travel Budget Comparison</h1>
-      <p>Fast estimates based on national averages (shown in EUR).</p>
+      <div style="display:flex; gap:12px; align-items:center; justify-content:space-between;">
+        <h1 data-i18n="title">Travel Budget Comparison</h1>
+
+        <select id="langSelect"
+          style="padding:8px 10px;border-radius:10px;border:1px solid rgba(255,255,255,0.14);background:rgba(0,0,0,0.25);color:rgba(255,255,255,0.95);">
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="es">ES</option>
+          <option value="pt">PT</option>
+        </select>
+      </div>
+
+      <p data-i18n="subtitle">Fast estimates based on national averages (shown in EUR).</p>
+
       <p>
-        <a href="/countries/" class="navlink">Browse all countries →</a>
+        <a href="/countries/" class="navlink" data-i18n="browseAll">Browse all countries →</a>
       </p>
     </header>
 
     <section class="card">
       <div class="grid">
         <label>
-          Country A
+          <span data-i18n="countryA">Country A</span>
           <select id="countryA"></select>
         </label>
 
         <label>
-          Country B
+          <span data-i18n="countryB">Country B</span>
           <select id="countryB"></select>
         </label>
 
         <label>
-          Trip length (days)
+          <span data-i18n="tripLength">Trip length (days)</span>
           <input id="days" type="range" min="3" max="30" value="14" />
-          <div class="hint"><span id="daysValue">14</span> days</div>
+          <div class="hint"><span id="daysValue">14</span> <span data-i18n="days">days</span></div>
         </label>
 
         <label>
-          Travel style
+          <span data-i18n="travelStyle">Travel style</span>
           <select id="profile">
-            <option value="backpacker">Backpacker</option>
-            <option value="comfort" selected>Comfort</option>
-            <option value="luxury">Luxury</option>
+            <option value="backpacker" data-i18n="backpacker">Backpacker</option>
+            <option value="comfort" selected data-i18n="comfort">Comfort</option>
+            <option value="luxury" data-i18n="luxury">Luxury</option>
           </select>
         </label>
 
         <label class="checkbox">
           <input id="includeFlight" type="checkbox" checked />
-          Include round-trip flight (from Europe)
+          <span data-i18n="includeFlight">Include round-trip flight (from Europe)</span>
         </label>
       </div>
     </section>
 
     <section class="card" id="resultsCard" hidden>
-      <h2>Results</h2>
+      <h2 data-i18n="results">Results</h2>
 
       <div class="results-grid">
         <div class="result">
@@ -69,7 +82,8 @@
           </div>
           <div class="big" id="totalA"></div>
           <div class="sub">
-            <span id="perDayA"></span> / day · Flight: <span id="flightA"></span>
+            <span id="perDayA"></span> <span data-i18n="perDay">/ day</span> ·
+            <span data-i18n="flightLabel">Flight</span>: <span id="flightA"></span>
           </div>
         </div>
 
@@ -82,7 +96,8 @@
           </div>
           <div class="big" id="totalB"></div>
           <div class="sub">
-            <span id="perDayB"></span> / day · Flight: <span id="flightB"></span>
+            <span id="perDayB"></span> <span data-i18n="perDay">/ day</span> ·
+            <span data-i18n="flightLabel">Flight</span>: <span id="flightB"></span>
           </div>
         </div>
       </div>
@@ -90,7 +105,7 @@
       <div class="compare" id="compareBox"></div>
 
       <div class="notes">
-        <h3>Important notes</h3>
+        <h3 data-i18n="importantNotes">Important notes</h3>
         <div class="notesGrid">
           <div>
             <strong id="notesTitleA"></strong>
@@ -101,7 +116,7 @@
             <ul id="notesB"></ul>
           </div>
         </div>
-        <p class="disclaimer">
+        <p class="disclaimer" data-i18n="disclaimer">
           Estimates are national averages. Actual costs vary a lot by city, season, and travel habits.
         </p>
       </div>

@@ -1,0 +1,22 @@
+{
+  "title": "Travel Budget Comparison",
+  "subtitle": "Fast estimates based on national averages (shown in EUR).",
+  "browseAll": "Browse all countries →",
+
+  "countryA": "Country A",
+  "countryB": "Country B",
+  "tripLength": "Trip length (days)",
+  "days": "days",
+  "travelStyle": "Travel style",
+  "backpacker": "Backpacker",
+  "comfort": "Comfort",
+  "luxury": "Luxury",
+  "includeFlight": "Include round-trip flight (from Europe)",
+
+  "results": "Results",
+  "perDay": "/ day",
+  "flightLabel": "Flight",
+  "compareText": "{cheaper} is cheaper. {expensive} costs +{diff} (~{pct}) over {days} days.",
+  "importantNotes": "Important notes",
+  "disclaimer": "Estimates are national averages. Actual costs vary a lot by city, season, and travel habits."
+}
