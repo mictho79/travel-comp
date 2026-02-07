@@ -3,18 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <!-- Google Search Console verification -->
+  <meta name="google-site-verification" content="lBEIuS-fSyE4xe_CNG8TaV0_-NneRXKzxq7G8EycSwI" />
+
   <title>Travel Budget Comparison</title>
   <meta name="description" content="Compare estimated travel budgets between countries based on national averages." />
   <link rel="stylesheet" href="/styles.css" />
 </head>
+
 <body>
   <main class="container">
     <header class="header">
       <h1>Travel Budget Comparison</h1>
       <p>Fast estimates based on national averages (shown in EUR).</p>
       <p>
-  <a href="/countries/" class="navlink">Browse all countries →</a>
-</p>
+        <a href="/countries/" class="navlink">Browse all countries →</a>
+      </p>
     </header>
 
     <section class="card">
@@ -55,39 +60,31 @@
       <h2>Results</h2>
 
       <div class="results-grid">
-
-        <!-- COUNTRY A -->
         <div class="result">
           <div class="label" id="nameA"></div>
-
           <div class="country-card">
             <div class="country-frame">
               <img id="imgA" class="country-art" alt="" />
             </div>
           </div>
-
           <div class="big" id="totalA"></div>
           <div class="sub">
             <span id="perDayA"></span> / day · Flight: <span id="flightA"></span>
           </div>
         </div>
 
-        <!-- COUNTRY B -->
         <div class="result">
           <div class="label" id="nameB"></div>
-
           <div class="country-card">
             <div class="country-frame">
               <img id="imgB" class="country-art" alt="" />
             </div>
           </div>
-
           <div class="big" id="totalB"></div>
           <div class="sub">
             <span id="perDayB"></span> / day · Flight: <span id="flightB"></span>
           </div>
         </div>
-
       </div>
 
       <div class="compare" id="compareBox"></div>
