@@ -705,8 +705,8 @@
       "Transport can be costly",
       "Local food is good value"
     ]
-  }
-,"bolivia": {
+  },
+"bolivia": {
     "name": "Bolivia",
     "image": "./assets/pixel/bolivia.png",
     "budgetPerDay": { "backpacker": 30, "comfort": 70, "luxury": 180 },

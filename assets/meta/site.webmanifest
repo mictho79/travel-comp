@@ -1,0 +1,12 @@
+{
+  "name": "Travel Budget Comparison",
+  "short_name": "TravelBudget",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#140c1c",
+  "theme_color": "#140c1c",
+  "icons": [
+    { "src": "/assets/meta/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/meta/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
