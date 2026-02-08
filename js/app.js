@@ -1,6 +1,7 @@
 // File: js/app.js
 import { computeBudget, compareBudgets } from "./calc.js";
 import { detectLang, setLang, loadDict, applyI18n, formatTemplate } from "./i18n.js";
+import { loadCountries } from "./countries.js";
 
 const els = {
   langSelect: document.querySelector("#langSelect"),
@@ -69,12 +70,6 @@ function renderNotes(country, titleEl, listEl) {
   });
 }
 
-async function loadCountriesEN() {
-  const res = await fetch("./data/countries.en.json");
-  if (!res.ok) throw new Error("Missing ./data/countries.en.json");
-  countries = await res.json();
-}
-
 function fillSelects() {
   const keys = Object.keys(countries);
 
@@ -82,8 +77,9 @@ function fillSelects() {
   els.countryB.innerHTML = "";
 
   for (const key of keys) {
-    els.countryA.add(new Option(countries[key].name, key));
-    els.countryB.add(new Option(countries[key].name, key));
+    const name = countries[key]?.name ?? key;
+    els.countryA.add(new Option(name, key));
+    els.countryB.add(new Option(name, key));
   }
 
   // defaults
@@ -118,20 +114,20 @@ function update() {
   els.imgB.alt = bCountry?.name ? `${bCountry.name} pixel art` : "";
 
   // numbers
-  els.nameA.textContent = aCountry.name;
+  els.nameA.textContent = aCountry?.name ?? "";
   els.totalA.textContent = money(a.total);
   els.perDayA.textContent = money(a.perDay);
   els.flightA.textContent = money(a.flight);
 
-  els.nameB.textContent = bCountry.name;
+  els.nameB.textContent = bCountry?.name ?? "";
   els.totalB.textContent = money(b.total);
   els.perDayB.textContent = money(b.perDay);
   els.flightB.textContent = money(b.flight);
 
   // comparison
   const cmp = compareBudgets(a, b);
-  const cheaperName = cmp.cheaper === "A" ? aCountry.name : bCountry.name;
-  const expensiveName = cmp.moreExpensive === "A" ? aCountry.name : bCountry.name;
+  const cheaperName = cmp.cheaper === "A" ? aCountry?.name : bCountry?.name;
+  const expensiveName = cmp.moreExpensive === "A" ? aCountry?.name : bCountry?.name;
   const pct = cmp.diffPct == null ? "—" : `${cmp.diffPct.toFixed(0)}%`;
 
   const template =
@@ -139,8 +135,8 @@ function update() {
     "{cheaper} is cheaper. {expensive} costs +{diff} (~{pct}) over {days} days.";
 
   els.compareBox.textContent = formatTemplate(template, {
-    cheaper: cheaperName,
-    expensive: expensiveName,
+    cheaper: cheaperName ?? "",
+    expensive: expensiveName ?? "",
     diff: money(cmp.diffAbs),
     pct,
     days,
@@ -166,7 +162,7 @@ async function boot() {
   dict = await loadDict(lang);
   applyI18n(dict);
 
-  await loadCountriesEN();
+  countries = await loadCountries(lang);
   fillSelects();
   update();
 }
@@ -174,8 +170,12 @@ async function boot() {
 if (els.langSelect) {
   els.langSelect.addEventListener("change", async () => {
     lang = setLang(els.langSelect.value);
+
     dict = await loadDict(lang);
     applyI18n(dict);
+
+    countries = await loadCountries(lang);
+    fillSelects();
     update();
   });
 }

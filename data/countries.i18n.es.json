@@ -1,0 +1,642 @@
+{
+  "thailand": {
+    "name": "Tailandia",
+    "notes": [
+      "Bangkok y Phuket suelen ser bastante más caros que la media del país",
+      "El norte (Chiang Mai, Chiang Rai) normalmente sale mucho más barato",
+      "La comida callejera es muy económica; las actividades/tours pueden variar muchísimo de precio"
+    ]
+  },
+  "uae": {
+    "name": "Emiratos Árabes Unidos",
+    "notes": [
+      "Dubái empuja la media nacional hacia arriba",
+      "Hay pocas opciones realmente low-cost en comparación con otros destinos",
+      "Las atracciones “premium” pueden ser carísimas"
+    ]
+  },
+  "vietnam": {
+    "name": "Vietnam",
+    "notes": [
+      "Hanói y Ciudad Ho Chi Minh suelen ser más caras que las ciudades pequeñas",
+      "Comer es una muy buena relación calidad-precio y el transporte es barato",
+      "Bahía de Ha Long y los tours populares pueden subir el presupuesto rápido"
+    ]
+  },
+  "cambodia": {
+    "name": "Camboya",
+    "notes": [
+      "La zona de Angkor Wat puede ser más cara que el resto del país",
+      "El USD se usa mucho junto con la moneda local",
+      "Los traslados entre ciudades pueden ser largos; deja margen en la planificación"
+    ]
+  },
+  "laos": {
+    "name": "Laos",
+    "notes": [
+      "En algunos pueblos hay menos opciones económicas que en países vecinos",
+      "El ritmo suele ser lento; las distancias engañan",
+      "Fuera de los lugares más turísticos, la relación calidad-precio es muy buena"
+    ]
+  },
+  "japan": {
+    "name": "Japón",
+    "notes": [
+      "Tokio y Kioto son caros comparados con ciudades más pequeñas",
+      "Los pases de tren pueden cambiar muchísimo el coste total",
+      "Los konbini (tiendas 24h) facilitan comer barato más de lo que esperas"
+    ]
+  },
+  "philippines": {
+    "name": "Filipinas",
+    "notes": [
+      "El island hopping y los vuelos domésticos pueden encarecer el viaje",
+      "Los destinos de playa más famosos suelen costar más",
+      "Los desplazamientos pueden llevar tiempo; planifica bien las conexiones"
+    ]
+  },
+  "indonesia": {
+    "name": "Indonesia",
+    "notes": [
+      "Bali suele ser más caro que Java o Lombok",
+      "Alquilar moto y hacer tours puede disparar el gasto rápidamente",
+      "Hay muchísima variación según la isla y la temporada"
+    ]
+  },
+  "morocco": {
+    "name": "Marruecos",
+    "notes": [
+      "Marrakech puede ser más cara que otras ciudades",
+      "Los riads varían mucho de precio según la ubicación",
+      "Las excursiones al desierto o a la montaña pueden cambiar bastante el presupuesto"
+    ]
+  },
+  "turkey": {
+    "name": "Turquía",
+    "notes": [
+      "Estambul cuesta más que la mayoría de regiones",
+      "Capadocia (tours y globos) puede ser caro",
+      "Los precios pueden fluctuar; conviene mirar allí mismo"
+    ]
+  },
+  "italy": {
+    "name": "Italia",
+    "notes": [
+      "Roma, Florencia y Venecia son más caras que los pueblos pequeños",
+      "El tren es comodísimo, pero si reservas tarde puede salir caro",
+      "En temporada alta, las zonas turísticas suben mucho los precios"
+    ]
+  },
+  "spain": {
+    "name": "España",
+    "notes": [
+      "Barcelona y Madrid suelen ser más caras que muchas otras ciudades",
+      "Fuera de las zonas turísticas, se come muy bien por buen precio",
+      "En verano suben los precios en la costa"
+    ]
+  },
+  "portugal": {
+    "name": "Portugal",
+    "notes": [
+      "Lisboa y Oporto son más caros que las localidades pequeñas",
+      "Comer suele salir muy bien de precio comparado con otros países de Europa occidental",
+      "En verano (especialmente en la costa) los precios suben"
+    ]
+  },
+  "greece": {
+    "name": "Grecia",
+    "notes": [
+      "Islas como Santorini o Mykonos son muy caras",
+      "La Grecia continental suele ser bastante más barata",
+      "Los ferris pueden influir mucho en el presupuesto"
+    ]
+  },
+  "croatia": {
+    "name": "Croacia",
+    "notes": [
+      "Dubrovnik es mucho más caro que otras ciudades costeras",
+      "Saltar entre islas aumenta el gasto en transporte",
+      "En temporada media suele haber mucho mejor relación calidad-precio"
+    ]
+  },
+  "mexico": {
+    "name": "México",
+    "notes": [
+      "Zonas turísticas como Cancún o Tulum son más caras",
+      "La comida callejera es baratísima",
+      "Los vuelos internos ahorran tiempo, pero suben el presupuesto"
+    ]
+  },
+  "brazil": {
+    "name": "Brasil",
+    "notes": [
+      "Río y São Paulo son más caros que ciudades pequeñas",
+      "Las distancias son enormes; los vuelos encarecen",
+      "Fuera de los grandes hubs turísticos, suele haber buen precio"
+    ]
+  },
+  "peru": {
+    "name": "Perú",
+    "notes": [
+      "Cusco y la zona de Machu Picchu elevan la media",
+      "En mercados locales se come muy bien por poco",
+      "La altitud puede afectar el ritmo del viaje y la planificación"
+    ]
+  },
+  "south_korea": {
+    "name": "Corea del Sur",
+    "notes": [
+      "Seúl es más caro que la mayoría de regiones",
+      "El transporte público es eficiente y bastante asequible",
+      "La comida callejera ayuda a mantener bajo el gasto diario"
+    ]
+  },
+  "australia": {
+    "name": "Australia",
+    "notes": [
+      "Sídney y Melbourne son caros",
+      "Las grandes distancias aumentan el coste de moverse por el país",
+      "El alojamiento suele ser el mayor gasto"
+    ]
+  },
+  "france": {
+    "name": "Francia",
+    "notes": [
+      "París es mucho más caro que el resto del país",
+      "Viajar por regiones suele salir mejor de precio",
+      "Los trenes de alta velocidad pueden salir caros si reservas tarde"
+    ]
+  },
+  "germany": {
+    "name": "Alemania",
+    "notes": [
+      "Berlín suele ser más barato que Múnich o Fráncfort",
+      "El transporte público es muy eficiente, pero puede sumar",
+      "Los precios de comida son moderados para Europa occidental"
+    ]
+  },
+  "united_kingdom": {
+    "name": "Reino Unido",
+    "notes": [
+      "Londres sube mucho la media nacional",
+      "El alojamiento es el gasto principal",
+      "El transporte puede ser caro"
+    ]
+  },
+  "ireland": {
+    "name": "Irlanda",
+    "notes": [
+      "Dublín es bastante más caro que las zonas rurales",
+      "Fuera de las ciudades suele convenir alquilar coche",
+      "La comida es relativamente cara"
+    ]
+  },
+  "netherlands": {
+    "name": "Países Bajos",
+    "notes": [
+      "Ámsterdam es la ciudad más cara",
+      "Moverse en bici reduce mucho el gasto en transporte",
+      "En temporada alta el alojamiento se llena rápido"
+    ]
+  },
+  "belgium": {
+    "name": "Bélgica",
+    "notes": [
+      "Bruselas y Brujas suelen ser más caras que otras ciudades",
+      "La comida es muy buena, pero no suele ser barata",
+      "Al ser un país compacto, el transporte entre ciudades no cuesta tanto"
+    ]
+  },
+  "switzerland": {
+    "name": "Suiza",
+    "notes": [
+      "Es de los países más caros de Europa",
+      "El transporte en zonas de montaña puede subir el gasto rápidamente",
+      "Cocinar por tu cuenta ahorra muchísimo"
+    ]
+  },
+  "austria": {
+    "name": "Austria",
+    "notes": [
+      "Viena suele ser más barata que muchas capitales occidentales",
+      "Las regiones alpinas son más caras",
+      "El transporte público es fiable"
+    ]
+  },
+  "slovenia": {
+    "name": "Eslovenia",
+    "notes": [
+      "Liubliana es asequible comparada con Europa occidental",
+      "Viajes centrados en naturaleza suelen dar muy buen valor",
+      "En verano los precios suben"
+    ]
+  },
+  "czech_republic": {
+    "name": "República Checa",
+    "notes": [
+      "Praga es más cara que el resto del país",
+      "La cerveza y el transporte público son muy baratos",
+      "Muy buen destino para escapadas urbanas"
+    ]
+  },
+  "hungary": {
+    "name": "Hungría",
+    "notes": [
+      "Budapest ofrece una relación calidad-precio excelente",
+      "Los baños termales añaden un extra pequeño",
+      "Comida y transporte son asequibles"
+    ]
+  },
+  "poland": {
+    "name": "Polonia",
+    "notes": [
+      "Cracovia y Varsovia suelen ser muy económicas",
+      "Moverse entre ciudades es barato",
+      "En general, muy buen precio"
+    ]
+  },
+  "iceland": {
+    "name": "Islandia",
+    "notes": [
+      "La comida y el alojamiento son muy caros",
+      "Casi siempre hace falta alquilar coche",
+      "La mayoría de atractivos naturales son gratis"
+    ]
+  },
+  "norway": {
+    "name": "Noruega",
+    "notes": [
+      "Oslo y Bergen son caros",
+      "El alcohol es muy caro",
+      "Si el plan es naturaleza, se compensa porque muchas cosas no cuestan"
+    ]
+  },
+  "sweden": {
+    "name": "Suecia",
+    "notes": [
+      "Estocolmo es la ciudad más cara",
+      "El transporte público es fiable, pero caro",
+      "La comida tiene precios moderados para Escandinavia"
+    ]
+  },
+  "denmark": {
+    "name": "Dinamarca",
+    "notes": [
+      "Copenhague es muy caro",
+      "Ir en bici reduce el gasto en transporte",
+      "La comida es cara"
+    ]
+  },
+  "finland": {
+    "name": "Finlandia",
+    "notes": [
+      "Helsinki es más caro que otras zonas",
+      "Viajar por naturaleza suele salir bien",
+      "El transporte es eficiente"
+    ]
+  },
+  "romania": {
+    "name": "Rumanía",
+    "notes": [
+      "Muy buen precio comparado con Europa occidental",
+      "Transilvania es popular y asequible",
+      "El transporte es barato"
+    ]
+  },
+  "bulgaria": {
+    "name": "Bulgaria",
+    "notes": [
+      "Sofía y Plovdiv son muy económicas",
+      "La costa del Mar Negro sube en verano",
+      "Gran destino low-cost"
+    ]
+  },
+  "malaysia": {
+    "name": "Malasia",
+    "notes": [
+      "Kuala Lumpur es barata para ser capital",
+      "La comida es barata y excelente",
+      "Las islas suelen subir el gasto"
+    ]
+  },
+  "singapore": {
+    "name": "Singapur",
+    "notes": [
+      "Es de las ciudades más caras de Asia",
+      "Los hawker centres dan muy buena comida a buen precio",
+      "El transporte público excelente ayuda a recortar gastos extra"
+    ]
+  },
+  "china": {
+    "name": "China",
+    "notes": [
+      "Las grandes ciudades son más caras que las zonas rurales",
+      "Los trenes de alta velocidad pueden subir el coste",
+      "La comida suele seguir siendo asequible casi en cualquier sitio"
+    ]
+  },
+  "india": {
+    "name": "India",
+    "notes": [
+      "Es extremadamente barata para comer y moverse",
+      "Incluso el “lujo” puede salir asequible",
+      "El ritmo de viaje suele ser más lento de lo que parece"
+    ]
+  },
+  "nepal": {
+    "name": "Nepal",
+    "notes": [
+      "Katmandú es barata comparada con muchas capitales",
+      "Los permisos de trekking suman al presupuesto",
+      "Muy buen destino para estancias largas"
+    ]
+  },
+  "sri_lanka": {
+    "name": "Sri Lanka",
+    "notes": [
+      "Las zonas de playa suelen ser más caras",
+      "Los trenes son baratos y espectaculares",
+      "Comer ofrece muy buen valor"
+    ]
+  },
+  "maldives": {
+    "name": "Maldivas",
+    "notes": [
+      "Las islas-resort son extremadamente caras",
+      "Las islas locales ofrecen estancias más baratas",
+      "Los traslados pueden sumar mucho"
+    ]
+  },
+  "jordan": {
+    "name": "Jordania",
+    "notes": [
+      "La entrada a Petra sube bastante el gasto total",
+      "La comida es asequible",
+      "Los tours por el desierto añaden coste"
+    ]
+  },
+  "israel": {
+    "name": "Israel",
+    "notes": [
+      "Tel Aviv es muy caro",
+      "El transporte público es eficiente",
+      "La comida es cara"
+    ]
+  },
+  "oman": {
+    "name": "Omán",
+    "notes": [
+      "A menudo conviene alquilar coche",
+      "El alojamiento tiene precios moderados",
+      "Es menos turístico que sus vecinos"
+    ]
+  },
+  "kazakhstan": {
+    "name": "Kazajistán",
+    "notes": [
+      "Fuera de las grandes ciudades es muy asequible",
+      "Las distancias grandes aumentan tiempos de viaje",
+      "Destino emergente"
+    ]
+  },
+  "united_states": {
+    "name": "Estados Unidos",
+    "notes": [
+      "Las grandes ciudades son muy caras",
+      "A menudo hace falta alquilar coche",
+      "Comidas y propinas suben el gasto diario"
+    ]
+  },
+  "canada": {
+    "name": "Canadá",
+    "notes": [
+      "Vancouver y Toronto son caros",
+      "Viajar por naturaleza suele añadir costes de transporte",
+      "Fuera de las grandes ciudades hay mejor relación calidad-precio"
+    ]
+  },
+  "argentina": {
+    "name": "Argentina",
+    "notes": [
+      "Suele ser muy buena relación calidad-precio por las fluctuaciones de la moneda",
+      "Las distancias largas encarecen los vuelos internos",
+      "Comida y vino pueden salir bastante asequibles"
+    ]
+  },
+  "chile": {
+    "name": "Chile",
+    "notes": [
+      "Santiago es más caro que otras zonas",
+      "Viajes a Patagonia suben mucho el presupuesto",
+      "Infraestructura segura y bastante desarrollada"
+    ]
+  },
+  "colombia": {
+    "name": "Colombia",
+    "notes": [
+      "Medellín suele salir muy bien de precio",
+      "Los vuelos domésticos suelen ser asequibles",
+      "Las zonas turísticas populares cuestan más"
+    ]
+  },
+  "costa_rica": {
+    "name": "Costa Rica",
+    "notes": [
+      "Es más caro que muchos países vecinos",
+      "Las actividades de naturaleza suman bastante",
+      "Muy buena infraestructura de ecoturismo"
+    ]
+  },
+  "panama": {
+    "name": "Panamá",
+    "notes": [
+      "Ciudad de Panamá es la zona más cara",
+      "El USD se usa ampliamente",
+      "Buen hub para moverse por la región"
+    ]
+  },
+  "cuba": {
+    "name": "Cuba",
+    "notes": [
+      "La disponibilidad limitada puede afectar a precios",
+      "El efectivo es esencial",
+      "La calidad del alojamiento varía bastante"
+    ]
+  },
+  "dominican_republic": {
+    "name": "República Dominicana",
+    "notes": [
+      "Las zonas de resort son caras",
+      "La comida local es asequible",
+      "Mejor relación calidad-precio fuera del todo-incluido"
+    ]
+  },
+  "jamaica": {
+    "name": "Jamaica",
+    "notes": [
+      "Los resorts turísticos suben la media",
+      "El transporte puede ser caro",
+      "La comida local suele dar buen valor"
+    ]
+  },
+  "bolivia": {
+    "name": "Bolivia",
+    "notes": [
+      "En general es muy barata",
+      "Los tours de Uyuni suben un poco el gasto",
+      "El transporte entre regiones es lento"
+    ]
+  },
+  "ecuador": {
+    "name": "Ecuador",
+    "notes": [
+      "Galápagos eleva muchísimo la media",
+      "El USD es la moneda oficial",
+      "En el continente suele haber muy buen precio"
+    ]
+  },
+  "guatemala": {
+    "name": "Guatemala",
+    "notes": [
+      "Antigua suele ser más cara que otros pueblos",
+      "Muy buen destino para estancias largas",
+      "Los shuttles entre destinos pueden sumar"
+    ]
+  },
+  "uruguay": {
+    "name": "Uruguay",
+    "notes": [
+      "Suele ser más caro que sus vecinos",
+      "Montevideo es la ciudad más cara",
+      "Infraestructura de alta calidad"
+    ]
+  },
+  "paraguay": {
+    "name": "Paraguay",
+    "notes": [
+      "Destino muy económico",
+      "Infraestructura turística limitada",
+      "Transporte barato, pero lento"
+    ]
+  },
+  "honduras": {
+    "name": "Honduras",
+    "notes": [
+      "Las Islas de la Bahía son más caras",
+      "Buen precio para buceo",
+      "Planificar transporte es clave"
+    ]
+  },
+  "el_salvador": {
+    "name": "El Salvador",
+    "notes": [
+      "La percepción de seguridad está mejorando",
+      "El USD es la moneda oficial",
+      "El turismo de surf está creciendo"
+    ]
+  },
+  "egypt": {
+    "name": "Egipto",
+    "notes": [
+      "Excelente relación calidad-precio para viajes de historia",
+      "Los paquetes/tours pueden subir el gasto",
+      "Comida y transporte son baratos"
+    ]
+  },
+  "south_africa": {
+    "name": "Sudáfrica",
+    "notes": [
+      "Muy buen valor incluso en opciones “lujo”",
+      "A menudo hace falta alquilar coche",
+      "Hay grandes distancias entre puntos clave"
+    ]
+  },
+  "tunisia": {
+    "name": "Túnez",
+    "notes": [
+      "Destino mediterráneo muy asequible",
+      "Las zonas de resort tienen precios distintos al interior",
+      "Se come muy bien por buen precio"
+    ]
+  },
+  "kenya": {
+    "name": "Kenia",
+    "notes": [
+      "Los safaris suben mucho el presupuesto",
+      "El transporte local es asequible",
+      "Buena infraestructura en zonas principales"
+    ]
+  },
+  "tanzania": {
+    "name": "Tanzania",
+    "notes": [
+      "Zanzíbar y los safaris aumentan el gasto",
+      "Las tasas de parques son caras",
+      "Experiencias de fauna increíbles"
+    ]
+  },
+  "namibia": {
+    "name": "Namibia",
+    "notes": [
+      "Alquilar coche suele ser imprescindible",
+      "Las distancias largas suben el gasto en combustible",
+      "Baja densidad de población"
+    ]
+  },
+  "senegal": {
+    "name": "Senegal",
+    "notes": [
+      "Dakar es más caro que el interior",
+      "Destino estable y acogedor",
+      "En general, buena relación calidad-precio"
+    ]
+  },
+  "ghana": {
+    "name": "Ghana",
+    "notes": [
+      "Accra es la ciudad más cara",
+      "País anglófono y fácil de moverse",
+      "Buen equilibrio entre comodidad y coste"
+    ]
+  },
+  "ethiopia": {
+    "name": "Etiopía",
+    "notes": [
+      "Sitios históricos muy únicos",
+      "Los vuelos internos ahorran tiempo",
+      "La infraestructura varía bastante según la región"
+    ]
+  },
+  "new_zealand": {
+    "name": "Nueva Zelanda",
+    "notes": [
+      "Es común viajar en coche o campervan",
+      "Muchas actividades de naturaleza son gratis",
+      "El alojamiento suele ser el mayor gasto"
+    ]
+  },
+  "fiji": {
+    "name": "Fiyi",
+    "notes": [
+      "Los traslados entre islas suman al presupuesto",
+      "Los resorts son caros",
+      "La isla principal suele ofrecer mejor valor"
+    ]
+  },
+  "french_polynesia": {
+    "name": "Polinesia Francesa",
+    "notes": [
+      "Es de los destinos insulares más caros",
+      "Los vuelos entre islas se acumulan rápido",
+      "Turismo muy orientado al lujo"
+    ]
+  },
+  "papua_new_guinea": {
+    "name": "Papúa Nueva Guinea",
+    "notes": [
+      "Infraestructura turística limitada",
+      "Los vuelos internos son caros",
+      "Experiencias culturales muy potentes"
+    ]
+  }
+}

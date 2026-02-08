@@ -1,0 +1,722 @@
+{
+  "thailand": {
+    "image": "./assets/pixel/thailand.png",
+    "budgetPerDay": {
+      "backpacker": 35,
+      "comfort": 80,
+      "luxury": 210
+    },
+    "flightFromEurope": 850
+  },
+  "uae": {
+    "image": "./assets/pixel/uae.png",
+    "budgetPerDay": {
+      "backpacker": 110,
+      "comfort": 240,
+      "luxury": 580
+    },
+    "flightFromEurope": 320
+  },
+  "vietnam": {
+    "image": "./assets/pixel/vietnam.png",
+    "budgetPerDay": {
+      "backpacker": 28,
+      "comfort": 65,
+      "luxury": 170
+    },
+    "flightFromEurope": 850
+  },
+  "cambodia": {
+    "image": "./assets/pixel/cambodia.png",
+    "budgetPerDay": {
+      "backpacker": 25,
+      "comfort": 55,
+      "luxury": 140
+    },
+    "flightFromEurope": 900
+  },
+  "laos": {
+    "image": "./assets/pixel/laos.png",
+    "budgetPerDay": {
+      "backpacker": 24,
+      "comfort": 55,
+      "luxury": 140
+    },
+    "flightFromEurope": 950
+  },
+  "japan": {
+    "image": "./assets/pixel/japan.png",
+    "budgetPerDay": {
+      "backpacker": 70,
+      "comfort": 140,
+      "luxury": 350
+    },
+    "flightFromEurope": 950
+  },
+  "philippines": {
+    "image": "./assets/pixel/philippines.png",
+    "budgetPerDay": {
+      "backpacker": 35,
+      "comfort": 85,
+      "luxury": 220
+    },
+    "flightFromEurope": 900
+  },
+  "indonesia": {
+    "image": "./assets/pixel/indonesia.png",
+    "budgetPerDay": {
+      "backpacker": 32,
+      "comfort": 80,
+      "luxury": 220
+    },
+    "flightFromEurope": 900
+  },
+  "morocco": {
+    "image": "./assets/pixel/morocco.png",
+    "budgetPerDay": {
+      "backpacker": 40,
+      "comfort": 85,
+      "luxury": 220
+    },
+    "flightFromEurope": 150
+  },
+  "turkey": {
+    "image": "./assets/pixel/turkey.png",
+    "budgetPerDay": {
+      "backpacker": 45,
+      "comfort": 100,
+      "luxury": 260
+    },
+    "flightFromEurope": 200
+  },
+  "italy": {
+    "image": "./assets/pixel/italy.png",
+    "budgetPerDay": {
+      "backpacker": 75,
+      "comfort": 140,
+      "luxury": 320
+    },
+    "flightFromEurope": 120
+  },
+  "spain": {
+    "image": "./assets/pixel/spain.png",
+    "budgetPerDay": {
+      "backpacker": 65,
+      "comfort": 120,
+      "luxury": 280
+    },
+    "flightFromEurope": 120
+  },
+  "portugal": {
+    "image": "./assets/pixel/portugal.png",
+    "budgetPerDay": {
+      "backpacker": 60,
+      "comfort": 115,
+      "luxury": 270
+    },
+    "flightFromEurope": 120
+  },
+  "greece": {
+    "image": "./assets/pixel/greece.png",
+    "budgetPerDay": {
+      "backpacker": 65,
+      "comfort": 130,
+      "luxury": 300
+    },
+    "flightFromEurope": 150
+  },
+  "croatia": {
+    "image": "./assets/pixel/croatia.png",
+    "budgetPerDay": {
+      "backpacker": 60,
+      "comfort": 120,
+      "luxury": 280
+    },
+    "flightFromEurope": 140
+  },
+  "mexico": {
+    "image": "./assets/pixel/mexico.png",
+    "budgetPerDay": {
+      "backpacker": 35,
+      "comfort": 80,
+      "luxury": 210
+    },
+    "flightFromEurope": 750
+  },
+  "brazil": {
+    "image": "./assets/pixel/brazil.png",
+    "budgetPerDay": {
+      "backpacker": 40,
+      "comfort": 90,
+      "luxury": 230
+    },
+    "flightFromEurope": 750
+  },
+  "peru": {
+    "image": "./assets/pixel/peru.png",
+    "budgetPerDay": {
+      "backpacker": 32,
+      "comfort": 75,
+      "luxury": 200
+    },
+    "flightFromEurope": 800
+  },
+  "south_korea": {
+    "image": "./assets/pixel/south_korea.png",
+    "budgetPerDay": {
+      "backpacker": 65,
+      "comfort": 135,
+      "luxury": 320
+    },
+    "flightFromEurope": 850
+  },
+  "australia": {
+    "image": "./assets/pixel/australia.png",
+    "budgetPerDay": {
+      "backpacker": 85,
+      "comfort": 160,
+      "luxury": 380
+    },
+    "flightFromEurope": 1100
+  },
+  "france": {
+    "image": "./assets/pixel/france.png",
+    "budgetPerDay": {
+      "backpacker": 75,
+      "comfort": 140,
+      "luxury": 320
+    },
+    "flightFromEurope": 80
+  },
+  "germany": {
+    "image": "./assets/pixel/germany.png",
+    "budgetPerDay": {
+      "backpacker": 70,
+      "comfort": 135,
+      "luxury": 300
+    },
+    "flightFromEurope": 100
+  },
+  "united_kingdom": {
+    "image": "./assets/pixel/united_kingdom.png",
+    "budgetPerDay": {
+      "backpacker": 85,
+      "comfort": 160,
+      "luxury": 360
+    },
+    "flightFromEurope": 120
+  },
+  "ireland": {
+    "image": "./assets/pixel/ireland.png",
+    "budgetPerDay": {
+      "backpacker": 80,
+      "comfort": 150,
+      "luxury": 340
+    },
+    "flightFromEurope": 120
+  },
+  "netherlands": {
+    "image": "./assets/pixel/netherlands.png",
+    "budgetPerDay": {
+      "backpacker": 80,
+      "comfort": 145,
+      "luxury": 330
+    },
+    "flightFromEurope": 100
+  },
+  "belgium": {
+    "image": "./assets/pixel/belgium.png",
+    "budgetPerDay": {
+      "backpacker": 70,
+      "comfort": 135,
+      "luxury": 300
+    },
+    "flightFromEurope": 100
+  },
+  "switzerland": {
+    "image": "./assets/pixel/switzerland.png",
+    "budgetPerDay": {
+      "backpacker": 110,
+      "comfort": 200,
+      "luxury": 450
+    },
+    "flightFromEurope": 120
+  },
+  "austria": {
+    "image": "./assets/pixel/austria.png",
+    "budgetPerDay": {
+      "backpacker": 70,
+      "comfort": 135,
+      "luxury": 310
+    },
+    "flightFromEurope": 120
+  },
+  "slovenia": {
+    "image": "./assets/pixel/slovenia.png",
+    "budgetPerDay": {
+      "backpacker": 60,
+      "comfort": 115,
+      "luxury": 260
+    },
+    "flightFromEurope": 140
+  },
+  "czech_republic": {
+    "image": "./assets/pixel/czech_republic.png",
+    "budgetPerDay": {
+      "backpacker": 55,
+      "comfort": 110,
+      "luxury": 250
+    },
+    "flightFromEurope": 130
+  },
+  "hungary": {
+    "image": "./assets/pixel/hungary.png",
+    "budgetPerDay": {
+      "backpacker": 50,
+      "comfort": 105,
+      "luxury": 240
+    },
+    "flightFromEurope": 130
+  },
+  "poland": {
+    "image": "./assets/pixel/poland.png",
+    "budgetPerDay": {
+      "backpacker": 50,
+      "comfort": 105,
+      "luxury": 240
+    },
+    "flightFromEurope": 140
+  },
+  "iceland": {
+    "image": "./assets/pixel/iceland.png",
+    "budgetPerDay": {
+      "backpacker": 95,
+      "comfort": 180,
+      "luxury": 420
+    },
+    "flightFromEurope": 180
+  },
+  "norway": {
+    "image": "./assets/pixel/norway.png",
+    "budgetPerDay": {
+      "backpacker": 100,
+      "comfort": 185,
+      "luxury": 430
+    },
+    "flightFromEurope": 160
+  },
+  "sweden": {
+    "image": "./assets/pixel/sweden.png",
+    "budgetPerDay": {
+      "backpacker": 80,
+      "comfort": 145,
+      "luxury": 330
+    },
+    "flightFromEurope": 150
+  },
+  "denmark": {
+    "image": "./assets/pixel/denmark.png",
+    "budgetPerDay": {
+      "backpacker": 85,
+      "comfort": 155,
+      "luxury": 350
+    },
+    "flightFromEurope": 150
+  },
+  "finland": {
+    "image": "./assets/pixel/finland.png",
+    "budgetPerDay": {
+      "backpacker": 75,
+      "comfort": 140,
+      "luxury": 320
+    },
+    "flightFromEurope": 160
+  },
+  "romania": {
+    "image": "./assets/pixel/romania.png",
+    "budgetPerDay": {
+      "backpacker": 45,
+      "comfort": 95,
+      "luxury": 220
+    },
+    "flightFromEurope": 150
+  },
+  "bulgaria": {
+    "image": "./assets/pixel/bulgaria.png",
+    "budgetPerDay": {
+      "backpacker": 45,
+      "comfort": 95,
+      "luxury": 220
+    },
+    "flightFromEurope": 150
+  },
+  "malaysia": {
+    "image": "./assets/pixel/malaysia.png",
+    "budgetPerDay": {
+      "backpacker": 30,
+      "comfort": 70,
+      "luxury": 180
+    },
+    "flightFromEurope": 850
+  },
+  "singapore": {
+    "image": "./assets/pixel/singapore.png",
+    "budgetPerDay": {
+      "backpacker": 85,
+      "comfort": 160,
+      "luxury": 380
+    },
+    "flightFromEurope": 900
+  },
+  "china": {
+    "image": "./assets/pixel/china.png",
+    "budgetPerDay": {
+      "backpacker": 45,
+      "comfort": 95,
+      "luxury": 240
+    },
+    "flightFromEurope": 700
+  },
+  "india": {
+    "image": "./assets/pixel/india.png",
+    "budgetPerDay": {
+      "backpacker": 22,
+      "comfort": 50,
+      "luxury": 140
+    },
+    "flightFromEurope": 650
+  },
+  "nepal": {
+    "image": "./assets/pixel/nepal.png",
+    "budgetPerDay": {
+      "backpacker": 25,
+      "comfort": 55,
+      "luxury": 150
+    },
+    "flightFromEurope": 750
+  },
+  "sri_lanka": {
+    "image": "./assets/pixel/sri_lanka.png",
+    "budgetPerDay": {
+      "backpacker": 28,
+      "comfort": 65,
+      "luxury": 170
+    },
+    "flightFromEurope": 750
+  },
+  "maldives": {
+    "image": "./assets/pixel/maldives.png",
+    "budgetPerDay": {
+      "backpacker": 90,
+      "comfort": 180,
+      "luxury": 600
+    },
+    "flightFromEurope": 850
+  },
+  "jordan": {
+    "image": "./assets/pixel/jordan.png",
+    "budgetPerDay": {
+      "backpacker": 55,
+      "comfort": 110,
+      "luxury": 260
+    },
+    "flightFromEurope": 300
+  },
+  "israel": {
+    "image": "./assets/pixel/israel.png",
+    "budgetPerDay": {
+      "backpacker": 85,
+      "comfort": 160,
+      "luxury": 360
+    },
+    "flightFromEurope": 300
+  },
+  "oman": {
+    "image": "./assets/pixel/oman.png",
+    "budgetPerDay": {
+      "backpacker": 60,
+      "comfort": 120,
+      "luxury": 280
+    },
+    "flightFromEurope": 350
+  },
+  "kazakhstan": {
+    "image": "./assets/pixel/kazakhstan.png",
+    "budgetPerDay": {
+      "backpacker": 40,
+      "comfort": 85,
+      "luxury": 210
+    },
+    "flightFromEurope": 400
+  },
+  "united_states": {
+    "image": "./assets/pixel/united_states.png",
+    "budgetPerDay": {
+      "backpacker": 85,
+      "comfort": 160,
+      "luxury": 380
+    },
+    "flightFromEurope": 600
+  },
+  "canada": {
+    "image": "./assets/pixel/canada.png",
+    "budgetPerDay": {
+      "backpacker": 75,
+      "comfort": 145,
+      "luxury": 340
+    },
+    "flightFromEurope": 600
+  },
+  "argentina": {
+    "image": "./assets/pixel/argentina.png",
+    "budgetPerDay": {
+      "backpacker": 35,
+      "comfort": 80,
+      "luxury": 200
+    },
+    "flightFromEurope": 800
+  },
+  "chile": {
+    "image": "./assets/pixel/chile.png",
+    "budgetPerDay": {
+      "backpacker": 45,
+      "comfort": 95,
+      "luxury": 240
+    },
+    "flightFromEurope": 850
+  },
+  "colombia": {
+    "image": "./assets/pixel/colombia.png",
+    "budgetPerDay": {
+      "backpacker": 32,
+      "comfort": 75,
+      "luxury": 190
+    },
+    "flightFromEurope": 750
+  },
+  "costa_rica": {
+    "image": "./assets/pixel/costa_rica.png",
+    "budgetPerDay": {
+      "backpacker": 55,
+      "comfort": 110,
+      "luxury": 260
+    },
+    "flightFromEurope": 750
+  },
+  "panama": {
+    "image": "./assets/pixel/panama.png",
+    "budgetPerDay": {
+      "backpacker": 45,
+      "comfort": 95,
+      "luxury": 230
+    },
+    "flightFromEurope": 750
+  },
+  "cuba": {
+    "image": "./assets/pixel/cuba.png",
+    "budgetPerDay": {
+      "backpacker": 35,
+      "comfort": 80,
+      "luxury": 200
+    },
+    "flightFromEurope": 700
+  },
+  "dominican_republic": {
+    "image": "./assets/pixel/dominican_republic.png",
+    "budgetPerDay": {
+      "backpacker": 40,
+      "comfort": 90,
+      "luxury": 220
+    },
+    "flightFromEurope": 650
+  },
+  "jamaica": {
+    "image": "./assets/pixel/jamaica.png",
+    "budgetPerDay": {
+      "backpacker": 45,
+      "comfort": 95,
+      "luxury": 240
+    },
+    "flightFromEurope": 700
+  },
+  "bolivia": {
+    "image": "./assets/pixel/bolivia.png",
+    "budgetPerDay": {
+      "backpacker": 30,
+      "comfort": 70,
+      "luxury": 180
+    },
+    "flightFromEurope": 850
+  },
+  "ecuador": {
+    "image": "./assets/pixel/ecuador.png",
+    "budgetPerDay": {
+      "backpacker": 35,
+      "comfort": 80,
+      "luxury": 200
+    },
+    "flightFromEurope": 750
+  },
+  "guatemala": {
+    "image": "./assets/pixel/guatemala.png",
+    "budgetPerDay": {
+      "backpacker": 32,
+      "comfort": 75,
+      "luxury": 190
+    },
+    "flightFromEurope": 750
+  },
+  "uruguay": {
+    "image": "./assets/pixel/uruguay.png",
+    "budgetPerDay": {
+      "backpacker": 50,
+      "comfort": 100,
+      "luxury": 250
+    },
+    "flightFromEurope": 850
+  },
+  "paraguay": {
+    "image": "./assets/pixel/paraguay.png",
+    "budgetPerDay": {
+      "backpacker": 30,
+      "comfort": 70,
+      "luxury": 180
+    },
+    "flightFromEurope": 850
+  },
+  "honduras": {
+    "image": "./assets/pixel/honduras.png",
+    "budgetPerDay": {
+      "backpacker": 35,
+      "comfort": 80,
+      "luxury": 200
+    },
+    "flightFromEurope": 750
+  },
+  "el_salvador": {
+    "image": "./assets/pixel/el_salvador.png",
+    "budgetPerDay": {
+      "backpacker": 35,
+      "comfort": 80,
+      "luxury": 200
+    },
+    "flightFromEurope": 750
+  },
+  "egypt": {
+    "image": "./assets/pixel/egypt.png",
+    "budgetPerDay": {
+      "backpacker": 35,
+      "comfort": 80,
+      "luxury": 210
+    },
+    "flightFromEurope": 250
+  },
+  "south_africa": {
+    "image": "./assets/pixel/south_africa.png",
+    "budgetPerDay": {
+      "backpacker": 45,
+      "comfort": 95,
+      "luxury": 240
+    },
+    "flightFromEurope": 700
+  },
+  "tunisia": {
+    "image": "./assets/pixel/tunisia.png",
+    "budgetPerDay": {
+      "backpacker": 30,
+      "comfort": 70,
+      "luxury": 180
+    },
+    "flightFromEurope": 180
+  },
+  "kenya": {
+    "image": "./assets/pixel/kenya.png",
+    "budgetPerDay": {
+      "backpacker": 45,
+      "comfort": 100,
+      "luxury": 260
+    },
+    "flightFromEurope": 650
+  },
+  "tanzania": {
+    "image": "./assets/pixel/tanzania.png",
+    "budgetPerDay": {
+      "backpacker": 40,
+      "comfort": 95,
+      "luxury": 250
+    },
+    "flightFromEurope": 650
+  },
+  "namibia": {
+    "image": "./assets/pixel/namibia.png",
+    "budgetPerDay": {
+      "backpacker": 50,
+      "comfort": 110,
+      "luxury": 280
+    },
+    "flightFromEurope": 700
+  },
+  "senegal": {
+    "image": "./assets/pixel/senegal.png",
+    "budgetPerDay": {
+      "backpacker": 40,
+      "comfort": 90,
+      "luxury": 230
+    },
+    "flightFromEurope": 450
+  },
+  "ghana": {
+    "image": "./assets/pixel/ghana.png",
+    "budgetPerDay": {
+      "backpacker": 40,
+      "comfort": 90,
+      "luxury": 230
+    },
+    "flightFromEurope": 500
+  },
+  "ethiopia": {
+    "image": "./assets/pixel/ethiopia.png",
+    "budgetPerDay": {
+      "backpacker": 35,
+      "comfort": 80,
+      "luxury": 210
+    },
+    "flightFromEurope": 500
+  },
+  "new_zealand": {
+    "image": "./assets/pixel/new_zealand.png",
+    "budgetPerDay": {
+      "backpacker": 80,
+      "comfort": 155,
+      "luxury": 360
+    },
+    "flightFromEurope": 1100
+  },
+  "fiji": {
+    "image": "./assets/pixel/fiji.png",
+    "budgetPerDay": {
+      "backpacker": 65,
+      "comfort": 130,
+      "luxury": 320
+    },
+    "flightFromEurope": 1200
+  },
+  "french_polynesia": {
+    "image": "./assets/pixel/french_polynesia.png",
+    "budgetPerDay": {
+      "backpacker": 90,
+      "comfort": 180,
+      "luxury": 450
+    },
+    "flightFromEurope": 1200
+  },
+  "papua_new_guinea": {
+    "image": "./assets/pixel/papua_new_guinea.png",
+    "budgetPerDay": {
+      "backpacker": 55,
+      "comfort": 115,
+      "luxury": 280
+    },
+    "flightFromEurope": 1200
+  }
+}

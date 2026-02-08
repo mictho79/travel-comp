@@ -2,7 +2,6 @@
 import fs from "fs";
 import path from "path";
 
-const countriesPath = "data/countries.en.json";
 const assetsDir = "assets";
 const stylesFile = "styles.css";
 const jsDir = "js";
@@ -12,13 +11,27 @@ const i18nDir = "i18n";
 const SITE_URL = "https://travel-comp.pages.dev";
 const outDir = "dist";
 
-const countries = JSON.parse(fs.readFileSync(countriesPath, "utf8"));
+// --- load base + EN i18n (SEO pages in EN) ---
+const base = JSON.parse(fs.readFileSync(path.join(dataDir, "countries.base.json"), "utf8"));
+const en = JSON.parse(fs.readFileSync(path.join(dataDir, "countries.i18n.en.json"), "utf8"));
 
+// merge (base first, then name/notes from i18n)
+const countries = {};
+for (const slug of Object.keys(base)) {
+  countries[slug] = {
+    ...base[slug],
+    name: en?.[slug]?.name ?? slug,
+    notes: en?.[slug]?.notes ?? [],
+  };
+}
+
+// --- clean dist ---
 fs.rmSync(outDir, { recursive: true, force: true });
 fs.mkdirSync(outDir, { recursive: true });
 
+// --- helpers ---
 const escapeHtml = (s) =>
-  String(s)
+  String(s ?? "")
     .replaceAll("&", "&amp;")
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
@@ -27,7 +40,7 @@ const escapeHtml = (s) =>
 
 const toAbsoluteAssetPath = (img) => {
   if (!img) return "/assets/pixel/placeholder.png";
-  if (img.startsWith("./")) return img.slice(1);
+  if (img.startsWith("./")) return img.slice(1); // "./assets/.." -> "/assets/.."
   if (!img.startsWith("/")) return "/" + img;
   return img;
 };
@@ -56,15 +69,20 @@ function layout({ title, description, content }) {
 
 const generatedUrls = [];
 
-// /countries/
-const listItems = Object.entries(countries)
+// --- /countries/ (sorted by name) ---
+const sorted = Object.entries(countries).sort((a, b) =>
+  (a[1].name || a[0]).localeCompare(b[1].name || b[0])
+);
+
+const listItems = sorted
   .map(([slug, c]) => {
-    const name = escapeHtml(c.name);
+    const name = escapeHtml(c.name || slug);
+    const b = c?.budgetPerDay ?? {};
     return `<li>
-      <a href="/country/${slug}/">${name}</a>
-      — Backpacker: ${c.budgetPerDay.backpacker}/day
-      — Comfort: ${c.budgetPerDay.comfort}/day
-      — Luxury: ${c.budgetPerDay.luxury}/day
+      <a href="/country/${escapeHtml(slug)}/">${name}</a>
+      — Backpacker: ${escapeHtml(b.backpacker ?? "—")}/day
+      — Comfort: ${escapeHtml(b.comfort ?? "—")}/day
+      — Luxury: ${escapeHtml(b.luxury ?? "—")}/day
     </li>`;
   })
   .join("\n");
@@ -79,31 +97,34 @@ fs.mkdirSync(path.join(outDir, "countries"), { recursive: true });
 fs.writeFileSync(path.join(outDir, "countries", "index.html"), countriesHtml);
 generatedUrls.push("/countries/");
 
-// /country/:slug/
+// --- /country/:slug/ ---
 for (const [slug, c] of Object.entries(countries)) {
+  const name = c.name || slug;
   const imgPath = toAbsoluteAssetPath(c.image);
   const notes = (c.notes || []).map((n) => `<li>${escapeHtml(n)}</li>`).join("");
 
+  const b = c?.budgetPerDay ?? {};
+
   const page = layout({
-    title: `${c.name} Travel Budget`,
-    description: `Daily travel costs in ${c.name}: backpacker, comfort, luxury. Flight from Europe and tips.`,
+    title: `${name} Travel Budget`,
+    description: `Daily travel costs in ${name}: backpacker, comfort, luxury. Flight from Europe and tips.`,
     content: `
-      <h1>${escapeHtml(c.name)}</h1>
+      <h1>${escapeHtml(name)}</h1>
 
       <img
         src="${escapeHtml(imgPath)}"
-        alt="${escapeHtml(c.name)} pixel art"
+        alt="${escapeHtml(name + " pixel art")}"
         onerror="this.onerror=null;this.src='/assets/pixel/placeholder.png';"
         style="max-width:240px;height:auto;image-rendering:pixelated;border-radius:12px;"
       />
 
-      <p><strong>Flight from Europe:</strong> ${c.flightFromEurope}</p>
+      <p><strong>Flight from Europe:</strong> ${escapeHtml(c.flightFromEurope ?? "—")}</p>
 
       <h2>Budget per day</h2>
       <ul>
-        <li>Backpacker: ${c.budgetPerDay.backpacker}</li>
-        <li>Comfort: ${c.budgetPerDay.comfort}</li>
-        <li>Luxury: ${c.budgetPerDay.luxury}</li>
+        <li>Backpacker: ${escapeHtml(b.backpacker ?? "—")}</li>
+        <li>Comfort: ${escapeHtml(b.comfort ?? "—")}</li>
+        <li>Luxury: ${escapeHtml(b.luxury ?? "—")}</li>
       </ul>
 
       <h2>Notes</h2>
@@ -119,12 +140,12 @@ for (const [slug, c] of Object.entries(countries)) {
   generatedUrls.push(`/country/${slug}/`);
 }
 
-// Home
+// --- Home ---
 if (!fs.existsSync("index.html")) throw new Error("Missing root index.html");
 fs.copyFileSync("index.html", path.join(outDir, "index.html"));
 generatedUrls.unshift("/");
 
-// robots + sitemap
+// --- robots + sitemap ---
 fs.writeFileSync(
   path.join(outDir, "robots.txt"),
   `User-agent: *
@@ -142,7 +163,7 @@ const sitemapXml =
 
 fs.writeFileSync(path.join(outDir, "sitemap.xml"), sitemapXml);
 
-// Copy static
+// --- Copy static ---
 if (fs.existsSync(assetsDir)) fs.cpSync(assetsDir, path.join(outDir, assetsDir), { recursive: true });
 if (fs.existsSync(stylesFile)) fs.copyFileSync(stylesFile, path.join(outDir, "styles.css"));
 if (fs.existsSync(jsDir)) fs.cpSync(jsDir, path.join(outDir, jsDir), { recursive: true });

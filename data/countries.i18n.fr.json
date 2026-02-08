@@ -1,0 +1,642 @@
+{
+  "thailand": {
+    "name": "Thaïlande",
+    "notes": [
+      "Bangkok et Phuket sont nettement plus chers que la moyenne nationale",
+      "Le nord (Chiang Mai, Chiang Rai) est souvent beaucoup moins cher",
+      "La street food est très abordable ; les activités/tours peuvent varier énormément"
+    ]
+  },
+  "uae": {
+    "name": "Émirats arabes unis",
+    "notes": [
+      "Dubaï tire la moyenne nationale vers le haut",
+      "Peu d’options vraiment “low-cost” comparé à beaucoup d’autres destinations",
+      "Les attractions premium peuvent coûter très cher"
+    ]
+  },
+  "vietnam": {
+    "name": "Vietnam",
+    "notes": [
+      "Hanoï et Hô Chi Minh-Ville sont plus chères que les petites villes",
+      "La nourriture offre un excellent rapport qualité-prix et les transports sont abordables",
+      "La baie d’Ha Long et les tours populaires peuvent faire grimper le budget rapidement"
+    ]
+  },
+  "cambodia": {
+    "name": "Cambodge",
+    "notes": [
+      "La zone d’Angkor Wat peut être plus chère que le reste du pays",
+      "Le dollar américain (USD) est très utilisé en plus de la monnaie locale",
+      "Les trajets entre villes peuvent être longs ; prévois des marges"
+    ]
+  },
+  "laos": {
+    "name": "Laos",
+    "notes": [
+      "Moins d’options budget dans certaines villes que dans les pays voisins",
+      "Le voyage “lent” est courant ; les distances peuvent être trompeuses",
+      "Excellent rapport qualité-prix hors des spots touristiques en période de pointe"
+    ]
+  },
+  "japan": {
+    "name": "Japon",
+    "notes": [
+      "Tokyo et Kyoto sont chers par rapport aux villes plus petites",
+      "Les pass ferroviaires peuvent changer fortement le coût total",
+      "Les konbini (supérettes) facilitent le budget nourriture plus qu’on ne l’imagine"
+    ]
+  },
+  "philippines": {
+    "name": "Philippines",
+    "notes": [
+      "L’island hopping et les vols domestiques peuvent vite coûter cher",
+      "Les destinations de plage populaires sont souvent plus chères",
+      "Les temps de transport peuvent être longs ; planifie bien les correspondances"
+    ]
+  },
+  "indonesia": {
+    "name": "Indonésie",
+    "notes": [
+      "Bali est souvent plus chère que Java/Lombok",
+      "Les locations de scooter et les tours peuvent faire grimper les dépenses rapidement",
+      "Variabilité énorme selon les îles et la saison"
+    ]
+  },
+  "morocco": {
+    "name": "Maroc",
+    "notes": [
+      "Marrakech peut être plus chère que d’autres villes",
+      "Les riads varient beaucoup en prix selon l’emplacement",
+      "Les excursions désert/montagne peuvent changer le budget de façon notable"
+    ]
+  },
+  "turkey": {
+    "name": "Turquie",
+    "notes": [
+      "Istanbul coûte plus cher que la plupart des autres régions",
+      "Les tours en Cappadoce et les vols en montgolfière peuvent être chers",
+      "Les prix peuvent fluctuer ; à vérifier sur place"
+    ]
+  },
+  "italy": {
+    "name": "Italie",
+    "notes": [
+      "Rome, Florence et Venise sont plus chères que les petites villes",
+      "Le train est pratique mais peut coûter cher si réservé tard",
+      "Les zones touristiques explosent en haute saison"
+    ]
+  },
+  "spain": {
+    "name": "Espagne",
+    "notes": [
+      "Barcelone et Madrid sont plus chères que beaucoup d’autres villes",
+      "Très bon rapport qualité-prix pour manger hors des zones touristiques",
+      "La saison balnéaire augmente les prix sur les côtes"
+    ]
+  },
+  "portugal": {
+    "name": "Portugal",
+    "notes": [
+      "Lisbonne et Porto sont plus chers que les villes plus petites",
+      "Très bon rapport qualité-prix sur la nourriture vs d’autres pays d’Europe de l’Ouest",
+      "L’été (surtout sur la côte) fait monter les prix"
+    ]
+  },
+  "greece": {
+    "name": "Grèce",
+    "notes": [
+      "Les îles populaires comme Santorin et Mykonos sont très chères",
+      "La Grèce continentale est beaucoup moins chère",
+      "Les ferries peuvent impacter fortement le budget"
+    ]
+  },
+  "croatia": {
+    "name": "Croatie",
+    "notes": [
+      "Dubrovnik est bien plus chère que d’autres villes côtières",
+      "Le saut d’île en île augmente les coûts de transport",
+      "La mi-saison offre un bien meilleur rapport qualité-prix"
+    ]
+  },
+  "mexico": {
+    "name": "Mexique",
+    "notes": [
+      "Les zones touristiques type Cancún et Tulum sont plus chères",
+      "La street food est extrêmement abordable",
+      "Les vols internes font gagner du temps mais augmentent le budget"
+    ]
+  },
+  "brazil": {
+    "name": "Brésil",
+    "notes": [
+      "Rio et São Paulo sont plus chers que les petites villes",
+      "Les distances internes sont énormes ; les vols s’additionnent",
+      "Très bon rapport qualité-prix hors des grands hubs touristiques"
+    ]
+  },
+  "peru": {
+    "name": "Pérou",
+    "notes": [
+      "Cusco et la zone du Machu Picchu tirent la moyenne vers le haut",
+      "Excellent rapport qualité-prix dans les marchés locaux",
+      "L’altitude peut impacter le rythme de voyage et la planification"
+    ]
+  },
+  "south_korea": {
+    "name": "Corée du Sud",
+    "notes": [
+      "Séoul est plus chère que la plupart des autres régions",
+      "Les transports publics sont efficaces et abordables",
+      "La street food maintient le budget nourriture quotidien raisonnable"
+    ]
+  },
+  "australia": {
+    "name": "Australie",
+    "notes": [
+      "Sydney et Melbourne sont coûteuses",
+      "Les longues distances augmentent les coûts de déplacement internes",
+      "L’hébergement est souvent le plus gros poste"
+    ]
+  },
+  "france": {
+    "name": "France",
+    "notes": [
+      "Paris est nettement plus chère que le reste du pays",
+      "Les régions offrent souvent un meilleur rapport qualité-prix",
+      "Les TGV peuvent coûter cher si réservés tard"
+    ]
+  },
+  "germany": {
+    "name": "Allemagne",
+    "notes": [
+      "Berlin est moins chère que Munich ou Francfort",
+      "Les transports publics sont efficaces mais peuvent s’additionner",
+      "Les prix de la nourriture sont modérés pour l’Europe de l’Ouest"
+    ]
+  },
+  "united_kingdom": {
+    "name": "Royaume-Uni",
+    "notes": [
+      "Londres fait fortement monter la moyenne nationale",
+      "L’hébergement est le principal poste de dépense",
+      "Les transports peuvent être chers"
+    ]
+  },
+  "ireland": {
+    "name": "Irlande",
+    "notes": [
+      "Dublin est bien plus chère que les zones rurales",
+      "La location de voiture est fréquente hors des villes",
+      "La nourriture est relativement chère"
+    ]
+  },
+  "netherlands": {
+    "name": "Pays-Bas",
+    "notes": [
+      "Amsterdam est la ville la plus chère",
+      "Le vélo réduit les coûts de transport",
+      "L’hébergement se remplit vite en haute saison"
+    ]
+  },
+  "belgium": {
+    "name": "Belgique",
+    "notes": [
+      "Bruxelles et Bruges sont plus chères que d’autres villes",
+      "La nourriture est de qualité mais rarement bon marché",
+      "Pays compact : les trajets restent relativement peu coûteux"
+    ]
+  },
+  "switzerland": {
+    "name": "Suisse",
+    "notes": [
+      "Un des pays les plus chers d’Europe",
+      "Les transports en montagne peuvent faire grimper le budget très vite",
+      "Cuisiner soi-même permet d’économiser beaucoup"
+    ]
+  },
+  "austria": {
+    "name": "Autriche",
+    "notes": [
+      "Vienne est moins chère que beaucoup de capitales d’Europe de l’Ouest",
+      "Les régions alpines sont plus chères",
+      "Les transports publics sont fiables"
+    ]
+  },
+  "slovenia": {
+    "name": "Slovénie",
+    "notes": [
+      "Ljubljana est abordable comparée à l’Europe de l’Ouest",
+      "Les voyages orientés nature offrent un excellent rapport qualité-prix",
+      "Les prix montent en été"
+    ]
+  },
+  "czech_republic": {
+    "name": "République tchèque",
+    "notes": [
+      "Prague est plus chère que le reste du pays",
+      "La bière et les transports publics sont très abordables",
+      "Très bon rapport qualité-prix pour un city trip"
+    ]
+  },
+  "hungary": {
+    "name": "Hongrie",
+    "notes": [
+      "Budapest offre un excellent rapport qualité-prix",
+      "Les bains thermaux ajoutent un petit extra",
+      "Nourriture et transports sont abordables"
+    ]
+  },
+  "poland": {
+    "name": "Pologne",
+    "notes": [
+      "Cracovie et Varsovie sont plutôt budget-friendly",
+      "Les transports entre villes sont bon marché",
+      "Bon rapport qualité-prix global"
+    ]
+  },
+  "iceland": {
+    "name": "Islande",
+    "notes": [
+      "Nourriture et hébergement sont très chers",
+      "La location de voiture est presque indispensable",
+      "Les attractions nature sont souvent gratuites"
+    ]
+  },
+  "norway": {
+    "name": "Norvège",
+    "notes": [
+      "Oslo et Bergen sont chers",
+      "L’alcool est très cher",
+      "Le focus nature compense souvent (beaucoup d’activités gratuites)"
+    ]
+  },
+  "sweden": {
+    "name": "Suède",
+    "notes": [
+      "Stockholm est la ville la plus chère",
+      "Les transports publics sont fiables mais coûteux",
+      "La nourriture est modérée pour la Scandinavie"
+    ]
+  },
+  "denmark": {
+    "name": "Danemark",
+    "notes": [
+      "Copenhague est très chère",
+      "Le vélo réduit les coûts de transport",
+      "La nourriture est chère"
+    ]
+  },
+  "finland": {
+    "name": "Finlande",
+    "notes": [
+      "Helsinki est plus chère que d’autres régions",
+      "Le voyage nature offre souvent un bon rapport qualité-prix",
+      "Les transports sont efficaces"
+    ]
+  },
+  "romania": {
+    "name": "Roumanie",
+    "notes": [
+      "Excellent rapport qualité-prix comparé à l’Europe de l’Ouest",
+      "La Transylvanie est populaire et abordable",
+      "Les transports coûtent peu"
+    ]
+  },
+  "bulgaria": {
+    "name": "Bulgarie",
+    "notes": [
+      "Sofia et Plovdiv sont très abordables",
+      "La côte de la mer Noire est plus chère en été",
+      "Super destination budget"
+    ]
+  },
+  "malaysia": {
+    "name": "Malaisie",
+    "notes": [
+      "Kuala Lumpur est abordable pour une capitale",
+      "La nourriture est peu chère et excellente",
+      "Les destinations insulaires augmentent le budget"
+    ]
+  },
+  "singapore": {
+    "name": "Singapour",
+    "notes": [
+      "Une des villes les plus chères d’Asie",
+      "Les hawker centres offrent un excellent rapport qualité-prix",
+      "Les transports publics très efficaces réduisent les dépenses annexes"
+    ]
+  },
+  "china": {
+    "name": "Chine",
+    "notes": [
+      "Les grandes villes sont plus chères que les zones rurales",
+      "Les trains à grande vitesse peuvent augmenter le budget",
+      "La nourriture reste abordable presque partout"
+    ]
+  },
+  "india": {
+    "name": "Inde",
+    "notes": [
+      "Très budget-friendly pour la nourriture et les transports",
+      "Les options “luxe” restent souvent abordables",
+      "Le rythme de voyage peut être plus lent que prévu"
+    ]
+  },
+  "nepal": {
+    "name": "Népal",
+    "notes": [
+      "Katmandou est bon marché comparée à beaucoup de capitales",
+      "Les permis de trek augmentent le budget",
+      "Excellent pour les longs séjours"
+    ]
+  },
+  "sri_lanka": {
+    "name": "Sri Lanka",
+    "notes": [
+      "Les zones de plage sont plus chères",
+      "Les trains sont bon marché et très beaux",
+      "La nourriture offre un excellent rapport qualité-prix"
+    ]
+  },
+  "maldives": {
+    "name": "Maldives",
+    "notes": [
+      "Les îles-resorts sont extrêmement chères",
+      "Les îles locales sont nettement plus abordables",
+      "Les transferts peuvent ajouter un coût important"
+    ]
+  },
+  "jordan": {
+    "name": "Jordanie",
+    "notes": [
+      "Le billet d’entrée de Petra augmente fortement le budget",
+      "La nourriture est abordable",
+      "Les excursions dans le désert ajoutent des coûts"
+    ]
+  },
+  "israel": {
+    "name": "Israël",
+    "notes": [
+      "Tel Aviv est très chère",
+      "Les transports publics sont efficaces",
+      "La nourriture coûte cher"
+    ]
+  },
+  "oman": {
+    "name": "Oman",
+    "notes": [
+      "La location de voiture est souvent nécessaire",
+      "Les prix de l’hébergement sont modérés",
+      "Moins touristique que les pays voisins"
+    ]
+  },
+  "kazakhstan": {
+    "name": "Kazakhstan",
+    "notes": [
+      "Très abordable hors des grandes villes",
+      "Grandes distances = temps de trajet plus longs",
+      "Destination émergente"
+    ]
+  },
+  "united_states": {
+    "name": "États-Unis",
+    "notes": [
+      "Les grandes villes sont très chères",
+      "La location de voiture est souvent nécessaire",
+      "Restaurants + tips font vite monter le budget quotidien"
+    ]
+  },
+  "canada": {
+    "name": "Canada",
+    "notes": [
+      "Vancouver et Toronto sont coûteuses",
+      "La nature implique souvent des coûts de transport",
+      "Meilleur rapport qualité-prix hors des grandes villes"
+    ]
+  },
+  "argentina": {
+    "name": "Argentine",
+    "notes": [
+      "Excellent rapport qualité-prix grâce aux fluctuations de la monnaie",
+      "Les longues distances augmentent les coûts de vols internes",
+      "Nourriture et vin sont abordables"
+    ]
+  },
+  "chile": {
+    "name": "Chili",
+    "notes": [
+      "Santiago est plus chère que d’autres régions",
+      "Les trips en Patagonie augmentent fortement le budget",
+      "Infrastructure sûre et bien développée"
+    ]
+  },
+  "colombia": {
+    "name": "Colombie",
+    "notes": [
+      "Medellín offre un excellent rapport qualité-prix",
+      "Les vols domestiques sont souvent abordables",
+      "Les zones touristiques populaires coûtent plus cher"
+    ]
+  },
+  "costa_rica": {
+    "name": "Costa Rica",
+    "notes": [
+      "Plus cher que les pays voisins",
+      "Les activités nature peuvent faire grimper le budget",
+      "Très bonne infrastructure éco-tourisme"
+    ]
+  },
+  "panama": {
+    "name": "Panama",
+    "notes": [
+      "Panama City est la zone la plus chère",
+      "Le dollar (USD) est largement utilisé",
+      "Bon hub pour voyager dans la région"
+    ]
+  },
+  "cuba": {
+    "name": "Cuba",
+    "notes": [
+      "La disponibilité limitée peut influencer les prix",
+      "Le cash est essentiel",
+      "La qualité des hébergements varie beaucoup"
+    ]
+  },
+  "dominican_republic": {
+    "name": "République dominicaine",
+    "notes": [
+      "Les zones all-inclusive / resort sont chères",
+      "La nourriture locale est abordable",
+      "Meilleur rapport qualité-prix hors des zones tout compris"
+    ]
+  },
+  "jamaica": {
+    "name": "Jamaïque",
+    "notes": [
+      "Les resorts touristiques tirent la moyenne vers le haut",
+      "Les transports peuvent être coûteux",
+      "La nourriture locale est souvent un bon plan"
+    ]
+  },
+  "bolivia": {
+    "name": "Bolivie",
+    "notes": [
+      "Très abordable dans l’ensemble",
+      "Les tours d’Uyuni augmentent légèrement le budget",
+      "Les transports entre régions sont lents"
+    ]
+  },
+  "ecuador": {
+    "name": "Équateur",
+    "notes": [
+      "Les Galápagos font exploser la moyenne",
+      "Le dollar (USD) est la monnaie officielle",
+      "Excellent rapport qualité-prix sur le continent"
+    ]
+  },
+  "guatemala": {
+    "name": "Guatemala",
+    "notes": [
+      "Antigua est plus chère que d’autres villes",
+      "Excellent pour les longs séjours",
+      "Les shuttles entre destinations peuvent s’additionner"
+    ]
+  },
+  "uruguay": {
+    "name": "Uruguay",
+    "notes": [
+      "Plus cher que les pays voisins",
+      "Montevideo est la ville la plus coûteuse",
+      "Infrastructure de haute qualité"
+    ]
+  },
+  "paraguay": {
+    "name": "Paraguay",
+    "notes": [
+      "Très budget-friendly",
+      "Infrastructure touristique limitée",
+      "Transports bon marché mais lents"
+    ]
+  },
+  "honduras": {
+    "name": "Honduras",
+    "notes": [
+      "Les Bay Islands sont plus chères",
+      "Bon rapport qualité-prix pour la plongée",
+      "La planification des transports est importante"
+    ]
+  },
+  "el_salvador": {
+    "name": "Salvador",
+    "notes": [
+      "Perception de la sécurité en amélioration",
+      "Le dollar (USD) est la monnaie officielle",
+      "Le tourisme surf est en plein essor"
+    ]
+  },
+  "egypt": {
+    "name": "Égypte",
+    "notes": [
+      "Excellent rapport qualité-prix pour un voyage axé histoire",
+      "Les packages/tours peuvent augmenter la dépense",
+      "Nourriture et transports sont bon marché"
+    ]
+  },
+  "south_africa": {
+    "name": "Afrique du Sud",
+    "notes": [
+      "Excellent rapport qualité-prix même en “luxe”",
+      "La location de voiture est souvent nécessaire",
+      "Grandes distances entre les incontournables"
+    ]
+  },
+  "tunisia": {
+    "name": "Tunisie",
+    "notes": [
+      "Destination méditerranéenne très abordable",
+      "Les zones resort ont des prix différents de l’intérieur",
+      "Très bon rapport qualité-prix côté nourriture"
+    ]
+  },
+  "kenya": {
+    "name": "Kenya",
+    "notes": [
+      "Les safaris augmentent fortement le budget",
+      "Les transports locaux sont abordables",
+      "Bonne infrastructure dans les zones principales"
+    ]
+  },
+  "tanzania": {
+    "name": "Tanzanie",
+    "notes": [
+      "Zanzibar et les safaris augmentent le budget",
+      "Les frais d’entrée dans les parcs sont élevés",
+      "Expériences wildlife exceptionnelles"
+    ]
+  },
+  "namibia": {
+    "name": "Namibie",
+    "notes": [
+      "La location de voiture est indispensable",
+      "Longues distances = carburant qui s’accumule",
+      "Faible densité de population"
+    ]
+  },
+  "senegal": {
+    "name": "Sénégal",
+    "notes": [
+      "Dakar est plus chère que l’intérieur du pays",
+      "Destination stable et accueillante",
+      "Bon rapport qualité-prix global"
+    ]
+  },
+  "ghana": {
+    "name": "Ghana",
+    "notes": [
+      "Accra est la ville la plus chère",
+      "Anglophone et facile à parcourir",
+      "Bon équilibre confort / budget"
+    ]
+  },
+  "ethiopia": {
+    "name": "Éthiopie",
+    "notes": [
+      "Sites historiques uniques",
+      "Les vols domestiques font gagner du temps",
+      "Infrastructure variable selon les régions"
+    ]
+  },
+  "new_zealand": {
+    "name": "Nouvelle-Zélande",
+    "notes": [
+      "Le road-trip en voiture ou van est très courant",
+      "Beaucoup d’activités nature sont gratuites",
+      "L’hébergement est souvent le plus gros poste"
+    ]
+  },
+  "fiji": {
+    "name": "Fidji",
+    "notes": [
+      "Les transferts entre îles augmentent le budget",
+      "Les resorts sont chers",
+      "La grande île offre souvent un meilleur rapport qualité-prix"
+    ]
+  },
+  "french_polynesia": {
+    "name": "Polynésie française",
+    "notes": [
+      "Une des destinations insulaires les plus chères",
+      "Les vols inter-îles s’additionnent vite",
+      "Tourisme très orienté luxe"
+    ]
+  },
+  "papua_new_guinea": {
+    "name": "Papouasie-Nouvelle-Guinée",
+    "notes": [
+      "Infrastructure touristique limitée",
+      "Les vols internes sont coûteux",
+      "Expériences culturelles très fortes"
+    ]
+  }
+}
