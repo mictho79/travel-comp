@@ -71,7 +71,11 @@ function renderNotes(country, titleEl, listEl) {
 }
 
 function fillSelects() {
-  const keys = Object.keys(countries);
+  const keys = Object.keys(countries)
+    .sort((a, b) =>
+      (countries[a]?.name ?? a)
+        .localeCompare(countries[b]?.name ?? b, getLocaleForLang(lang))
+    );
 
   els.countryA.innerHTML = "";
   els.countryB.innerHTML = "";
